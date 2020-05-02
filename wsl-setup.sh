@@ -46,6 +46,21 @@ rm ~/.bashrc_wsl
 # DEFAULT START DIRECTORY
 ./defaultdir.sh
 
+# Create aliases that override the default options for ls and tree
+./create-aliases.sh
+
+#Create a ~/.dircolors file that overrides directory display colors
+./dircolors.sh
+
+Creates functions to make it easy to run git commands on directories
+./git-dir-functions.sh
+
+# Installs Go programming language support
+./golang-install.sh
+
+#Installs NodeJS programming language support
+./nodejs-install.sh
+
 echo -e "${GREEN}"
 echo WSL Bash Setup complete.
 echo -e "${NOCOLOR}"
